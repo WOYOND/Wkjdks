@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="112" fill="#000000" />
+  <!-- Outer dot matrix grid subtle -->
+  <g fill="#1a1a1a">
+    <circle cx="64" cy="64" r="4"/>
+    <circle cx="128" cy="64" r="4"/>
+    <circle cx="192" cy="64" r="4"/>
+    <circle cx="256" cy="64" r="4"/>
+    <circle cx="320" cy="64" r="4"/>
+    <circle cx="384" cy="64" r="4"/>
+    <circle cx="448" cy="64" r="4"/>
+  </g>
+  <!-- Nothing style concentric ring & glyph -->
+  <circle cx="256" cy="256" r="160" fill="none" stroke="#262626" stroke-width="4" stroke-dasharray="8 8" />
+  <circle cx="256" cy="256" r="110" fill="none" stroke="#ffffff" stroke-width="6" />
+  
+  <!-- Nothing Red Accent Dot -->
+  <circle cx="330" cy="182" r="16" fill="#D71920" />
+  
+  <!-- Central stylized audio / tape reels -->
+  <circle cx="216" cy="256" r="28" fill="#141414" stroke="#ffffff" stroke-width="4" />
+  <circle cx="296" cy="256" r="28" fill="#141414" stroke="#ffffff" stroke-width="4" />
+  <circle cx="216" cy="256" r="8" fill="#ffffff" />
+  <circle cx="296" cy="256" r="8" fill="#ffffff" />
+  <path d="M 216 228 L 296 228" stroke="#ffffff" stroke-width="4" />
+  <path d="M 216 284 L 296 284" stroke="#ffffff" stroke-width="4" />
+
+  <!-- Dotted text simulation at bottom -->
+  <g fill="#888888">
+    <circle cx="208" cy="340" r="3"/>
+    <circle cx="224" cy="340" r="3"/>
+    <circle cx="240" cy="340" r="3"/>
+    <circle cx="256" cy="340" r="3"/>
+    <circle cx="272" cy="340" r="3"/>
+    <circle cx="288" cy="340" r="3"/>
+    <circle cx="304" cy="340" r="3"/>
+  </g>
+</svg>

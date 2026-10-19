@@ -1,0 +1,6 @@
+{
+  "name": "NOTHING (AUDIO) // Phone Player",
+  "description": "Мобильный аудиоплеер в стиле Nothing OS с монохромной эстетикой, точечными шрифтами, виджетами и импортом треков.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

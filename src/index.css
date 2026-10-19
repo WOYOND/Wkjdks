@@ -1,0 +1,252 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --nothing-red: #D71920;
+    --nothing-white: #FFFFFF;
+    --nothing-black: #000000;
+    --nothing-gray-dark: #121212;
+    --nothing-gray-mid: #262626;
+    --nothing-gray-light: #737373;
+  }
+
+  body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Nothing OS Typography Classes */
+.font-ndot {
+  font-family: 'Silkscreen', monospace;
+  letter-spacing: -0.05em;
+}
+
+.font-tech {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.font-nothing {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Nothing OS Dot Grid Pattern */
+.bg-dot-matrix {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+.bg-dot-matrix-dense {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.22) 1.2px, transparent 1.2px);
+  background-size: 8px 8px;
+}
+
+.bg-dot-matrix-red {
+  background-image: radial-gradient(rgba(215, 25, 32, 0.35) 1.2px, transparent 1.2px);
+  background-size: 8px 8px;
+}
+
+/* Custom scrollbar in Nothing style */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+/* Mechanical slider styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #262626;
+  height: 4px;
+  border-radius: 2px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -6px;
+  background-color: #ffffff;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+  transition: transform 0.1s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* Nothing OS Bezel Glow */
+.glyph-glow {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.4));
+}
+
+.glyph-red-glow {
+  filter: drop-shadow(0 0 10px rgba(215, 25, 32, 0.9)) drop-shadow(0 0 20px rgba(215, 25, 32, 0.5));
+}
+
+/* Dotted Border Utility */
+.border-dotted-nothing {
+  border-style: dotted;
+  border-width: 1.5px;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* ========================================================
+   NOTHING OS THEMES & TYPOGRAPHY SYSTEM
+   ======================================================== */
+
+/* WHITE THEME (NOTHING PURE WHITE / LIGHT OS) */
+.theme-white {
+  background-color: #f7f7f7 !important;
+  color: #0d0d0d !important;
+}
+
+.theme-white .bg-black {
+  background-color: #f5f5f5 !important;
+}
+
+.theme-white .bg-\[\#0a0a0a\],
+.theme-white .bg-\[\#050505\],
+.theme-white .bg-\[\#0c0c0c\],
+.theme-white .bg-\[\#0d0d0d\] {
+  background-color: #ededed !important;
+}
+
+.theme-white .bg-neutral-950 {
+  background-color: #ffffff !important;
+}
+
+.theme-white .bg-neutral-900 {
+  background-color: #fcfcfc !important;
+}
+
+.theme-white .bg-neutral-800 {
+  background-color: #e5e5e5 !important;
+}
+
+.theme-white .text-white {
+  color: #0a0a0a !important;
+}
+
+.theme-white .text-white\/80 {
+  color: rgba(10, 10, 10, 0.85) !important;
+}
+
+.theme-white .text-white\/70 {
+  color: rgba(10, 10, 10, 0.72) !important;
+}
+
+.theme-white .text-white\/60 {
+  color: rgba(10, 10, 10, 0.6) !important;
+}
+
+.theme-white .text-white\/50,
+.theme-white .text-white\/40 {
+  color: rgba(10, 10, 10, 0.45) !important;
+}
+
+.theme-white .text-white\/30,
+.theme-white .text-white\/20,
+.theme-white .text-white\/10 {
+  color: rgba(10, 10, 10, 0.25) !important;
+}
+
+.theme-white .border-white\/10,
+.theme-white .border-white\/15,
+.theme-white .border-white\/20,
+.theme-white .border-white\/30,
+.theme-white .border-white\/40 {
+  border-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+.theme-white .border-neutral-800,
+.theme-white .border-neutral-700 {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.theme-white .shadow-2xl,
+.theme-white .shadow-xl {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Invert solid white buttons in light theme to solid black */
+.theme-white .bg-white.text-black {
+  background-color: #0a0a0a !important;
+  color: #ffffff !important;
+}
+
+.theme-white .bg-white.text-black svg {
+  fill: #ffffff !important;
+  color: #ffffff !important;
+}
+
+/* Light dot grid */
+.theme-white .bg-dot-matrix {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.15) 1px, transparent 1px) !important;
+}
+
+/* FONT SIZE SCALES */
+.font-scale-small .text-base { font-size: 13.5px !important; }
+.font-scale-small .text-sm { font-size: 11.5px !important; }
+.font-scale-small .text-xs { font-size: 10px !important; }
+.font-scale-small .text-\[11px\] { font-size: 9.5px !important; }
+
+.font-scale-large .text-base { font-size: 18.5px !important; }
+.font-scale-large .text-sm { font-size: 15.5px !important; }
+.font-scale-large .text-xs { font-size: 13.5px !important; }
+.font-scale-large .text-\[11px\] { font-size: 12px !important; }
+
+/* ACCENT COLOR OVERRIDES */
+.accent-white .bg-\[\#D71920\] {
+  background-color: #ffffff !important;
+}
+.theme-white.accent-white .bg-\[\#D71920\] {
+  background-color: #0a0a0a !important;
+}
+.accent-white .text-\[\#D71920\] {
+  color: #ffffff !important;
+}
+.theme-white.accent-white .text-\[\#D71920\] {
+  color: #0a0a0a !important;
+}
+.accent-white .border-\[\#D71920\] {
+  border-color: #ffffff !important;
+}
+.theme-white.accent-white .border-\[\#D71920\] {
+  border-color: #0a0a0a !important;
+}
+
+.accent-orange .bg-\[\#D71920\] {
+  background-color: #FF5722 !important;
+}
+.accent-orange .text-\[\#D71920\] {
+  color: #FF5722 !important;
+}
+.accent-orange .border-\[\#D71920\] {
+  border-color: #FF5722 !important;
+}
